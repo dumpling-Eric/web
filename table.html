@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Table template</title>
+    <!-- <link href="style/table.css" rel="stylesheet" type="text/css"> -->
+  </head>
+  <body>
+    <h1>Table template</h1>
+
+    <!-- table显示表单：td描述表单数据，tr是定义格式 -->
+	<table id="table1">
+
+		<caption>a form</caption>
+
+		<!-- colgroup用来对列进行统一格式，span元素表示几个单元格 -->
+		<colgroup>
+			<col>
+			<col style="background-color: yellow">
+			<col style="background-color: blue" span="2">
+		</colgroup>
+
+		<!-- thead,tfoot,tbody各自代表的是标题，页脚和正文 -->
+		<thead>
+	  <tr>
+	    <td>&nbsp;</td>
+	    <td>Knocky</td>
+	    <td>Flor</td>
+	    <td>Ella</td>
+	    <td>Juan</td>
+	  </tr>
+		</thead>
+
+		<tbody>
+	  <tr>
+	    <td>Breed</td>
+	    <td>Jack Russell</td>
+	    <td>Poodle</td>
+	    <td>Streetdog</td>
+	    <td>Cocker Spaniel</td>
+	  </tr>
+	  <tr>
+	    <td>Age</td>
+	    <!-- 嵌套表格 -->
+	    <td id="nested">
+	      <table id="table2">
+	        <tr>
+	          <td>cell1</td>
+	          <td>cell2</td>
+	          <td>cell3</td>
+	        </tr>
+	      </table>
+	    </td>
+	    <td>9</td>
+	    <td>10</td>
+	    <td>5</td>
+	  </tr>
+	  <tr>
+	    <td>Owner</td>
+	    <td>Mother-in-law</td>
+	    <td>Me</td>
+	    <td>Me</td>
+	    <td>Sister-in-law</td>
+	  </tr>
+	  	</tbody>
+
+
+	  	<tfoot>
+	  <tr>
+	    <td>Eating Habits</td>
+	    <td>Eats everyone's leftovers</td>
+	    <td>Nibbles at food</td>
+	    <td>Hearty eater</td>
+	    <td>Will eat till he explodes</td>
+	  </tr>
+	  	</tfoot>
+	</table>
+
+	<!-- th是用来标记标题，scope表示范围 -->
+	<table>
+      <tr>
+        <td>&nbsp;</td>
+        <th scope="col">Knocky</th>
+        <th scope="col">Flor</th>
+        <th scope="col">Ella</th>
+        <th scope="col">Juan</th>
+      </tr>
+      <tr>
+        <th scope="row">Breed</th>
+        <td>Jack Russell</td>
+        <td>Poodle</td>
+        <td>Streetdog</td>
+        <td>Cocker Spaniel</td>
+      </tr>
+      <tr>
+        <th scope="row">Age</th>
+        <td>16</td>
+        <td>9</td>
+        <td>10</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <th scope="row">Owner</th>
+        <td>Mother-in-law</td>
+        <td>Me</td>
+        <td>Me</td>
+        <td>Sister-in-law</td>
+      </tr>
+      <tr>
+        <th scope="row">Eating Habits</th>
+        <td>Eats everyone's leftovers</td>
+        <td>Nibbles at food</td>
+        <td>Hearty eater</td>
+        <td>Will eat till he explodes</td>
+      </tr>
+    </table>
+
+
+    <!-- colspan代表横向跨越多个单元格，rowspan代表纵向跨越多个单元格 -->
+    <!-- 特备注意使用的规范，尤其是纵向跨越的时候 -->
+    <table>
+      <tr>
+      	<!-- style元素是定义背景 -->
+        <th colspan="2" style="background-color: blue">Animals</th>
+      </tr>
+      <tr>
+        <th colspan="2">Hippopotamus</th>
+      </tr>
+      <tr>
+        <th rowspan="2">Horse</th>
+        <td>Mare</td>
+      </tr>
+      <tr>
+        <td>Stallion</td>
+      </tr>
+      <tr>
+        <th colspan="2">Crocodile</th>
+      </tr>
+      <tr>
+        <th rowspan="2">Chicken</th>
+        <td>Hen</td>
+      </tr>
+      <tr>
+        <td>Rooster</td>
+      </tr>
+    </table>
+
+
+  </body>
+</html>
+

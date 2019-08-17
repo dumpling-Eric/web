@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head lang="en-US">
+	<!-- 指定编码方式，并且显示网页描述，在搜索的时候就是显示网页描述信息 -->
+	<meta charset="utf-8" name="description" content="this a introduction about eric">
+	<title>resume of eric</title>
+	<!-- 应用css，rel="stylesheet"表示这是文档的样式表，后接文件路径 -->
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<!-- 应用js -->
+	<script src="scripts/main.js" async></script>
+</head>
+<body>
+	<button>切换用户</button>
+
+<h1 id="introduction_eric">this is resume of xieyushun</h1>
+<img src="image/my-photo.jpg" alt="a photo of xieyushun">
+
+<p>he is a graduate student</p>
+
+<ul>
+	<!-- 对文档内进行超链接，超链接之前需要对文档进行编号id -->
+	<li>name:<a href="#introduction_eric">xieyushun</a></li>
+	<!-- 可以对文本内容进行说明 -->
+	<li>age:<abbr title="in a mood for love">25</abbr></li>
+	<li>gender:male</li>
+</ul>
+
+<ol>
+	<!-- 最简单的相对路径跳转 -->
+	<li>name:<a href="name.html" title="jump page to name.html">eric</a></li>
+	<li>hobby:fruit</li>
+	<li>major:computer</li>
+</ol>
+
+<dl>
+	<dt><b>whether the single</b></dt>
+		<dd>he is a single dog.</dd>
+	<dt><b>does he like anyone</b></dt>
+		<dd>yes</dd>
+</dl>
+
+<!-- 对一些内容进行超链接，这些超链接还可以在title中附带说明 -->
+<p>if you want to know, visit <a href="https://github.com/dumpling-Eric">github</a>.</p>
+<p>if you want to know something else, visit 
+	<a href="https://github.com/dumpling-Eric" title="eric's github">github</a>.</p>
+
+<p><a href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US"
+   download="firefox.exe">
+  Download Latest Firefox for Windows (64-bit) (English, US)
+</a></p>
+
+<!-- 引用的一般用法，感觉没什么作用 -->
+<p>welcome to visit my page. <cite>Thomas Hardy</cite> said:</p>
+<blockquote cite="https://www.lz13.cn/lizhiyingyu/8740.html">
+	<p>first, effort; second, more effort; third, still more effort.</p>
+</blockquote>
+<p>the main idea is <q>you must effort</q></p>
+
+
+<address>
+  <p>eric, guangzhou university, guangzhou, china</p>
+</address>
+
+<div class="figure">
+	<img src="image/timg.jpg" 
+		alt="leetcode的logo，具体怎么描述我也不知道"
+		width="400"
+		height="400">
+	<p>leetcode刷题宝典</p>
+	
+</div>
+
+<!-- figure标签和figcaption标签是对特定内容单元进行详细的说明 -->
+<figure>
+	<img src="image/timg.jpg" 
+		alt="leetcode的logo，具体怎么描述我也不知道"
+		width="400"
+		height="400">
+	<figcaption>leetcode刷题宝典</figcaption>
+</figure>
+
+
+</body>
+</html>
